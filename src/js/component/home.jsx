@@ -10,7 +10,7 @@ import {
 	Label,
 	Input
 } from "reactstrap";
-//include images into your bundle
+//include images into your bundlee
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
