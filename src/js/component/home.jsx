@@ -31,7 +31,9 @@ const Home = () => {
 		"A timer with three buttons for manipulation: pause, rewind and restore .",
 		"Todo List",
 		"An interface to create and delete pending tasks using text inputs.",
-		"Language:"
+		"Language:",
+		"Starwars repository",
+		"Website connected with information from SW planets and characters, information obtained from:"
 	];
 
 	const sp_lg = [
@@ -50,7 +52,9 @@ const Home = () => {
 		"Un temporizador con tres botones para su manipulación.",
 		"Lista de tareas",
 		"Una interfaz para crear y eliminar tareas pendientes mediante entradas de texto.",
-		"Idioma:"
+		"Idioma:",
+		"Repositorio de Star Wars",
+		"Página web conectada con información de los planetas y personajes de starwars de aquí:"
 	];
 
 	const [language, setLanguage] = useState(en_lg);
@@ -168,7 +172,7 @@ const Home = () => {
 			</div>
 			<div className="row mt-2 d-flex justify-content-center">
 				<div className="m-1">
-					<Toast className="text-center">
+					<Toast className="text-center" id="toasts_height">
 						<ToastHeader>{language[6]}</ToastHeader>
 						<ToastBody>{language[7]}</ToastBody>
 						<Button
@@ -182,7 +186,7 @@ const Home = () => {
 					</Toast>
 				</div>
 				<div className="m-1">
-					<Toast className="text-center">
+					<Toast className="text-center" id="toasts_height">
 						<ToastHeader>{language[9]}</ToastHeader>
 						<ToastBody>{language[10]}</ToastBody>
 						<Button
@@ -196,7 +200,7 @@ const Home = () => {
 					</Toast>
 				</div>
 				<div className="m-1">
-					<Toast className="text-center">
+					<Toast className="text-center" id="toasts_height">
 						<ToastHeader>{language[11]}</ToastHeader>
 						<ToastBody>{language[12]}</ToastBody>
 						<Button
@@ -210,7 +214,7 @@ const Home = () => {
 					</Toast>
 				</div>
 				<div className="m-1">
-					<Toast className="text-center">
+					<Toast className="text-center" id="toasts_height">
 						<ToastHeader>{language[13]}</ToastHeader>
 						<ToastBody>{language[14]}</ToastBody>
 						<Button
@@ -218,6 +222,25 @@ const Home = () => {
 							className="m-1"
 							color="success"
 							href="https://exercise-todo-list.vercel.app/"
+							target="__blank">
+							{language[8]}
+						</Button>
+					</Toast>
+				</div>
+				<div className="m-1">
+					<Toast className="text-center" id="toasts_height">
+						<ToastHeader>{language[16]}</ToastHeader>
+						<ToastBody>
+							{language[17]} &nbsp;
+							<a href="https://swapi.dev/" target="about:blank">
+								API
+							</a>
+						</ToastBody>
+						<Button
+							size="sm"
+							className="m-1"
+							color="success"
+							href="https://exercise-starwars-blog-reading-list2.vercel.app//"
 							target="__blank">
 							{language[8]}
 						</Button>
