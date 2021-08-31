@@ -54,7 +54,7 @@ const Home = () => {
 		"Una interfaz para crear y eliminar tareas pendientes mediante entradas de texto.",
 		"Idioma:",
 		"Repositorio de Star Wars",
-		"Página web conectada con información de los planetas y personajes de starwars de aquí:"
+		"Página web conectada con información de los planetas y personajes de SW, información obtenida de aquí:"
 	];
 
 	const [language, setLanguage] = useState(en_lg);
